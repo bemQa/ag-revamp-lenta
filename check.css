@@ -151,9 +151,9 @@ body {
     font-size: 21px;
     line-height: 1;
     text-align: center;
-    color: #fff;
-    background: radial-gradient(50.17% 63.64% at 49.83% 49.09%, #F70000 0%, #E50000 52.04%, #A70000 100%);
-    box-shadow: 2px 2px 5px #870b18;
+    color: #5B2200;
+    background: linear-gradient(272.1deg, #FBAE17 0%, #F7B94D 100%);
+    box-shadow: 2px 2px 5px #B57300;
     transition: all .2s linear;
     cursor: pointer;
     outline: none;
@@ -183,13 +183,13 @@ body {
     font-size: 21px;
     line-height: 1;
     text-align: center;
-    color: #fff;
-    background: radial-gradient(47.11% 35.28% at 48.87% 49.18%, #E9C026 0%, #F6A51B 98.4%);
-    box-shadow: 2px 2px 5px #870B18;
+    color: #5B2200;
+    background: transparent;
+    box-shadow: none;
     transition: all .2s linear;
     cursor: pointer;
     outline: none;
-    border: none;
+    border: 2px solid #682700;
     border-radius: 33px;
 }
 

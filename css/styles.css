@@ -2464,7 +2464,7 @@ table td:nth-child(3) {
     left: 0;
     right: 0;
     width: 100%;
-    height: 606px;
+    height: 620px;
     background: url(../img/bg-main2.png) center 0 no-repeat;
     background-size: 100% 100%;
 }
@@ -2497,33 +2497,46 @@ table td:nth-child(3) {
     margin: auto;
     width: 180px;
     height: 180px;
-    background: linear-gradient(235.93deg, #FFFFFF 16.19%, #FFE686 63.74%, #F7B545 106.56%);
+    background: linear-gradient(320.04deg, rgba(111, 77, 70, 0.51) 8.91%, rgba(17, 0, 3, 0.38) 93.51%);
     border-radius: 100px;
+    z-index: 0;
+    opacity: .1;
+}
+
+.step-img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 395px;
+    height: 354px;
+    background: url(../img/step-light.png) center 0 no-repeat;
+    background-size: contain;
+    mix-blend-mode: screen;
     z-index: 0;
 }
 
-.step1 .step-img img {
+.step-img img {
     position: absolute;
-    top: 0;
-    left: -82px;
-    right: -58px;
+    left: -50px;
+    right: -50px;
     margin: auto;
+    z-index: 1;
+}
+
+.step1 .step-img img {
+    top: -30px;
 }
 
 .step2 .step-img img {
-    position: absolute;
     top: 0;
-    left: -8px;
-    right: -37px;
-    margin: auto;
 }
 
 .step3 .step-img img {
-    position: absolute;
-    top: -50px;
-    left: 0;
-    right: 0;
-    margin: auto;
+    top: 0;
 }
 
 .step-num {
@@ -2533,8 +2546,8 @@ table td:nth-child(3) {
     justify-content: center;
     width: 50px;
     height: 50px;
-    margin: auto;
-    background: #EB2316;
+    margin: 0 auto 10px;
+    background: linear-gradient(133.23deg, #6F4D46 2.91%, #110003 100%);
     border-radius: 50px;
     font-weight: 900;
     font-size: 28px;
@@ -2550,7 +2563,6 @@ table td:nth-child(3) {
     text-align: center;
     text-transform: uppercase;
     color: #fff;
-    text-shadow: -1px 1px 2px rgba(104, 39, 0, 0.75);
     margin-bottom: 5px;
 }
 
@@ -2559,6 +2571,7 @@ table td:nth-child(3) {
     font-size: 16px;
     line-height: 20px;
     text-align: center;
+    color: #fff;
 }
 
 .step-text span {
@@ -2608,16 +2621,16 @@ table td:nth-child(3) {
 }
 
 .prize-col:nth-child(1) {
-    max-width: 750px;
+    max-width: 900px;
 }
 
 .prize-col-title {
-    font-weight: bold;
+    font-weight: 900;
     font-size: 21px;
     line-height: 24px;
     text-align: center;
     text-transform: uppercase;
-    color: #FFE686;
+    color: #F7B94D;
     height: 48px;
     margin-bottom: 50px;
 }
@@ -2636,7 +2649,7 @@ table td:nth-child(3) {
 .prize-img {
     position: relative;
     height: 180px;
-    margin: 0 auto 50px;
+    margin: 0 auto 30px;
 }
 
 .prize-img::before {
@@ -2649,41 +2662,56 @@ table td:nth-child(3) {
     margin: auto;
     width: 180px;
     height: 180px;
-    background: linear-gradient(235.93deg, #FFFFFF 16.19%, #FFE686 63.74%, #F7B545 106.56%);
+    background: linear-gradient(134.91deg, #DEBB84 0%, #825835 100%);
     border-radius: 100px;
     z-index: 0;
+    opacity: .5;
+}
+
+.prize-img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    right: -50px;
+    bottom: 0;
+    margin: auto;
+    width: 395px;
+    height: 354px;
+    background: url(../img/prize-light.png) center 0 no-repeat;
+    background-size: contain;
+    mix-blend-mode: screen;
+    z-index: 0;
+    opacity: 0.5;
+}
+
+.prize-img img {
+    position: absolute;
+    left: -50px;
+    right: -50px;
+    margin: auto;
+    z-index: 1;
 }
 
 .prize1 .prize-img img {
     position: absolute;
     top: -20px;
-    left: -12px;
-    right: -12px;
-    margin: auto;
 }
 
 .prize2 .prize-img img {
     position: absolute;
-    top: -32px;
-    left: -16px;
-    right: -25px;
-    margin: auto;
+    top: 0;
+    bottom: 0;
 }
 
 .prize3 .prize-img img {
     position: absolute;
-    top: -32px;
-    left: -26px;
-    right: -34px;
-    margin: auto;
+    top: -20px;
 }
 
 .prize4 .prize-img img {
     position: absolute;
-    top: -25px;
-    left: -17px;
-    right: -14px;
-    margin: auto;
+    top: 10px;
 }
 
 .prize-title {
@@ -2693,7 +2721,6 @@ table td:nth-child(3) {
     text-align: center;
     text-transform: uppercase;
     color: #fff;
-    text-shadow: -1px 1px 2px rgba(104, 39, 0, 0.75);
     margin-bottom: 5px;
 }
 
@@ -2702,6 +2729,7 @@ table td:nth-child(3) {
     font-size: 16px;
     line-height: 20px;
     text-align: center;
+    color: #fff;
 }
 
 .prize-text span {
@@ -2727,12 +2755,12 @@ table td:nth-child(3) {
 
 .main-decor2 {
     position: absolute;
-    top: -100px;
+    top: -110px;
     left: 0;
     right: -1100px;
     margin: auto;
-    width: 229px;
-    height: 202px;
+    width: 187px;
+    height: 141px;
     background: url(../img/main-decor2.png) center no-repeat;
     background-size: contain;
 }
@@ -2740,11 +2768,11 @@ table td:nth-child(3) {
 .main-decor3 {
     position: absolute;
     top: -160px;
-    left: -800px;
+    left: -900px;
     right: 0;
     margin: auto;
-    width: 461px;
-    height: 276px;
+    width: 284px;
+    height: 289px;
     background: url(../img/main-decor3.png) center no-repeat;
     background-size: contain;
 }
@@ -2755,8 +2783,8 @@ table td:nth-child(3) {
     left: 0;
     right: -950px;
     margin: auto;
-    width: 232px;
-    height: 193px;
+    width: 254px;
+    height: 119px;
     background: url(../img/main-decor4.png) center no-repeat;
     background-size: contain;
 }
@@ -3456,7 +3484,7 @@ table td:nth-child(3) {
     .kv {
         height: 731px;
         background: url(../img/kv-mob.jpg) center 0 no-repeat;
-        background-size: 492px;
+        background-size: 1216px;
     }
 
     .action-info {
@@ -3495,7 +3523,7 @@ table td:nth-child(3) {
 
     .steps-block::before {
         top: -40px;
-        height: 1250px;
+        height: 1350px;
         background: url(../img/bg-main2-mob.png) center 0 no-repeat;
         background-size: 100% 100%;
     }
@@ -3568,24 +3596,29 @@ table td:nth-child(3) {
     }
 
     .main-decor3 {
-        top: -130px;
-        left: -20px;
-        right: -20px;
-        width: 325px;
-        height: 195px;
+        top: -90px;
+        left: 0;
+        right: -300px;
+        width: 182px;
+        height: 143px;
+        background: url(../img/main-decor3-mob.png) center no-repeat;
+        background-size: contain;
     }
 
     .main-decor4 {
-        top: 190px;
-        right: -350px;
-        width: 155px;
-        height: 129px;
+        top: -45px;
+        left: -250px;
+        right: 0;
+        width: 130px;
+        height: 80px;
+        background: url(../img/main-decor4-mob.png) center no-repeat;
+        background-size: contain;
     }
 
     .main-decor5 {
-        top: 580px;
-        left: -340px;
-        width: 92px;
+        top: 450px;
+        left: -300px;
+        width: 88px;
         height: 221px;
         background: url(../img/main-decor5-mob.png) center no-repeat;
         background-size: contain;
