@@ -2706,7 +2706,9 @@ table td:nth-child(3) {
 
 .prize3 .prize-img img {
     position: absolute;
-    top: -20px;
+    top: -10px;
+    width: 280px;
+    transform: scale(1.3);
 }
 
 .prize34 .prize-img img {
@@ -3583,6 +3585,11 @@ table td:nth-child(3) {
 
     .prize-img {
         margin-bottom: 20px;
+    }
+
+    .prize3 .prize-img img {
+        top: -20px;
+        transform: scale(1);
     }
 
     .main-decor1 {
